@@ -74,6 +74,11 @@ function ResumePageContent() {
     };
 
     const handleGenerate = async () => {
+      // Validate required fields
+      if (!fields.name || !fields.email || !fields.jobTitle || !fields.summary || !fields.education || !fields.experience || !fields.skills) {
+        setError("Please fill in all required fields before generating.");
+        return;
+      }
       setLoading(true);
       setError("");
       setSuccess("");
