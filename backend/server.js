@@ -12,19 +12,25 @@ const prisma = new PrismaClient();
 // Restrict CORS to only allow frontend domain in production
 const allowedOrigins = [
   'http://localhost:3000',
-  ' https://vercel.com/feskenas-projects/resume-frontend' // <-- Replace with your actual Vercel frontend URL
-];
+  'https://resume-frontend-ashy-nu.vercel.app',
+  'https://resume-frontend-feskenas-projects.vercel.app',
+  'https://resume-frontend-git-main-feskenas-projects.vercel.app',
+  'https://resume-frontend-34xfye1xk-feskenas-projects.vercel.app'
+  ];
 app.use(cors({
   origin: function(origin, callback) {
+    console.log('CORS request from origin:', origin);
+    console.log('Allowed origins:', allowedOrigins);
     // allow requests with no origin (like mobile apps, curl, etc.)
     if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) !== -1) {
+    if (allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
     }
   },
-  methods: ['GET', 'POST', 'OPTIONS'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
 app.use(express.json());
