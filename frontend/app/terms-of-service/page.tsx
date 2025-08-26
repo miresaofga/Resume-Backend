@@ -16,7 +16,7 @@ export default function TermsOfService() {
           <li>Our liability is limited to the maximum extent permitted by law.</li>
           <li>These terms are governed by the laws of your jurisdiction.</li>
         </ul>
-        <p className="text-blue-700">For questions, contact us at <a href="mailto:support@example.com" className="underline text-blue-500">support@example.com</a>.</p>
+        <p className="text-blue-700">For questions, contact us at <a href="mailto:feskenai@gmail.com" className="underline text-blue-500">feskenai@gmail.com</a>.</p>
         <div className="mt-8 text-center">
           <Link href="/" className="text-blue-700 font-bold underline">Back to Home</Link>
         </div>

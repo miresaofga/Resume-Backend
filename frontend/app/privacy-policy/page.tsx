@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
           <li>Data is retained only as long as necessary for service delivery.</li>
           <li>We will notify users promptly in the event of a data breach.</li>
         </ul>
-        <p className="text-blue-700">For questions, contact us at <a href="mailto:support@example.com" className="underline text-blue-500">support@example.com</a>.</p>
+        <p className="text-blue-700">For questions, contact us at <a href="mailto:feskenai@gmail.com" className="underline text-blue-500">feskenai@gmail.com</a>.</p>
         <div className="mt-8 text-center">
           <Link href="/" className="text-blue-700 font-bold underline">Back to Home</Link>
         </div>
