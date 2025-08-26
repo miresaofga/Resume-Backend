@@ -31,8 +31,8 @@ export default function Home() {
           {menuOpen && (
       <div className="sm:hidden absolute right-4 top-14 bg-white/95 rounded-2xl shadow-xl flex flex-col w-52 z-30 border border-blue-100">
         <Link href="/login" className="text-blue-700 hover:bg-blue-50 px-4 py-3 rounded-xl transition font-semibold" onClick={() => setMenuOpen(false)}>Register</Link>
-  {/* <Link href="/resume" className="text-blue-700 hover:bg-blue-50 px-4 py-3 rounded-xl transition font-semibold" onClick={() => setMenuOpen(false)}>Resume Builder</Link> */}
-  <Link href="/resume-demo" className="text-purple-700 hover:bg-purple-50 px-4 py-3 rounded-xl transition font-semibold" onClick={() => setMenuOpen(false)}>Try Demo</Link>
+        {/* <Link href="/resume" className="text-blue-700 hover:bg-blue-50 px-4 py-3 rounded-xl transition font-semibold" onClick={() => setMenuOpen(false)}>Resume Builder</Link> */}
+        <Link href="/resume" className="text-purple-700 hover:bg-purple-50 px-4 py-3 rounded-xl transition font-semibold" onClick={() => setMenuOpen(false)}>Try Demo</Link>
       </div>
           )}
           {/* Nav links for desktop */}
@@ -40,7 +40,7 @@ export default function Home() {
               <Link href="/login" className="text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-xl transition">Register</Link>
               <Link href="/subscription" className="text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-xl transition">Login</Link>
               {/* <Link href="/resume" className="text-blue-700 hover:bg-blue-100 px-4 py-2 rounded-xl transition">Resume Builder</Link> */}
-              <Link href="/resume-demo" className="text-purple-700 hover:bg-purple-50 px-4 py-2 rounded-xl transition">Try Demo</Link>
+              <Link href="/resume" className="text-purple-700 hover:bg-purple-50 px-4 py-2 rounded-xl transition">Try Demo</Link>
           </nav>
         </div>
       </header>
@@ -61,7 +61,7 @@ export default function Home() {
       <div className="flex gap-6 justify-center">
   <Link href="/login" className="px-8 py-3 bg-gradient-to-r from-blue-400 to-pink-300 text-white rounded-2xl font-bold shadow-lg hover:scale-110 hover:shadow-2xl hover:brightness-110 transition-all duration-200">Get Started</Link>
   {/* <Link href="/resume" className="px-8 py-3 bg-white border-2 border-blue-300 text-blue-700 rounded-2xl font-bold shadow hover:bg-blue-50 hover:scale-110 hover:shadow-xl transition-all duration-200">Resume Builder</Link> */}
-        <Link href="/resume-demo" className="px-8 py-3 bg-purple-700 text-white rounded-2xl font-bold shadow-lg hover:bg-purple-800 hover:scale-110 hover:shadow-2xl transition-all duration-200">Try Demo</Link>
+        <Link href="/resume" className="px-8 py-3 bg-purple-700 text-white rounded-2xl font-bold shadow-lg hover:bg-purple-800 hover:scale-110 hover:shadow-2xl transition-all duration-200">Try Demo</Link>
       </div>
           </div>
         </div>
